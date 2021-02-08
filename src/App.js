@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <PictureSelector onSearch={(input) => setUrl(`${process.env.REACT_APP_BASE_URL}/search/photos?page=1&per_page=20&query=${input}?&client_id=${process.env.REACT_APP_API_KEY}`)}/>
+      <PictureSelector onSearch={(input) => setUrl(`${process.env.REACT_APP_BASE_URL}/search/photos?page=1&per_page=20&content_filter=high&query=${input}?&client_id=${process.env.REACT_APP_API_KEY}`)}/>
       {getContent()}
     </div>
   );
